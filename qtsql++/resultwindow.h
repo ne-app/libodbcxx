@@ -23,11 +23,11 @@
 #define RESULTWINDOW_H
 
 
-#include <qdialog.h>
-#include <qlistview.h>
-#include <qlabel.h>
-#include <qpushbutton.h>
-#include <qsemimodal.h>
+#include <QDialog>
+#include <QListView>
+#include <QLabel>
+#include <QPushButton>
+#include <QSemiModal>
 
 #include <odbc++/resultset.h>
 #include <odbc++/statement.h>
