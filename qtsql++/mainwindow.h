@@ -22,14 +22,14 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <qwidget.h>
-#include <qmainwindow.h>
-#include <qmenubar.h>
-#include <qpushbutton.h>
-#include <qpopupmenu.h>
-#include <qlabel.h>
-#include <qlistview.h>
-#include <qmultilineedit.h>
+#include <QWidget>
+#include <QMainWindow>
+#include <QMenuBar>
+#include <QPushButton>
+#include <QPopupMenu>
+#include <QLabel>
+#include <QListView>
+#include <QMultiLineEdit>
 
 namespace odbc { class Connection; }
 
