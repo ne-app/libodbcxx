@@ -98,6 +98,11 @@ namespace odbc {
   }
 #endif
 
+/// AMLALE: Please open a PR if this is a regression. With testing and results.
+#if !defined(ODBCXX_STRING_PERCENT)
+#define ODBCXX_STRING_PERCENT "%"
+#endif
+
   inline ODBCXX_STRING longToString(Long l) {
     ODBCXX_CHAR_TYPE buf[LONG_STR_LEN];
 #if defined(WIN32) && defined(ODBCXX_HAVE__I64TOA)
