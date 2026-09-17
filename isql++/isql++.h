@@ -72,6 +72,8 @@ public:
   }
 
   void setTermWidth(size_t w) {
+    /// AMLALE: Why would you even set the vterm width to zero?
+    if (!w) return;
     termWidth_=w;
   }
 
@@ -96,9 +98,9 @@ public:
   void showCmd(const vector<string>& args);
   void showTypesCmd();
 
+  // commands commit,rollback, and description.
   void commitCmd(const vector<string>& args);
   void rollbackCmd(const vector<string>& args);
-
   void describeCmd(const vector<string>& args);
 
 
